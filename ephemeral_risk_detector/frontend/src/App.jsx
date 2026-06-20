@@ -49,10 +49,7 @@ export default function App() {
       {/* ── top bar ── */}
       <header className="topbar">
         <h1>⚡ Ephemeral Cloud &amp; K8s Risk Detector</h1>
-        <span className="badge badge-b">Option B — Statistical Core</span>
-        <span className="badge badge-a">+ Option A — LLM Narrative</span>
         <span className="topbar-right">
-          PS3 · Société Générale Hackathon &nbsp;|&nbsp;
           Pipeline run: {new Date().toLocaleTimeString()}
         </span>
       </header>
@@ -70,14 +67,12 @@ export default function App() {
           <div className="card">
             <div className="section-title">
               Burst Timeline — Events per 30-min window
-              <span className="opt-tag opt-b">Option B</span>
             </div>
             <BurstTimeline data={timeline.data} />
           </div>
           <div className="card">
             <div className="section-title">
               TTL Distribution — Ephemeral Resources
-              <span className="opt-tag opt-b">Option B</span>
             </div>
             <TTLHistogram labels={ttl.labels} counts={ttl.counts} />
           </div>
@@ -88,14 +83,12 @@ export default function App() {
           <div className="card">
             <div className="section-title">
               Cumulative Risk Score — Top 10 Principals
-              <span className="opt-tag opt-b">Option B</span>
             </div>
             <RiskByPrincipal data={principal.data} />
           </div>
           <div className="card">
             <div className="section-title">
               Severity Distribution
-              <span className="opt-tag opt-b">Option B</span>
             </div>
             <SeverityPie distribution={stats.severity_distribution} />
           </div>
