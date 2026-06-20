@@ -29,7 +29,8 @@ Optional — enable real LLM narratives (Phase 5b / Option A):
     export GROQ_API_KEY=your_key_here
     python run.py
 """
-
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import sys
 

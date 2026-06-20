@@ -17,7 +17,8 @@ GET /api/ttl-dist           → TTL histogram bins + counts
 GET /api/risk-by-principal  → top-N principals by cumulative risk score
 GET /api/evaluate           → full evaluation metrics (precision/recall/etc.)
 """
-
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import sys
 import pandas as pd

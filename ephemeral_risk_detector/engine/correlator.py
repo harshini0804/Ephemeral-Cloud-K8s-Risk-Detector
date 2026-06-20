@@ -24,7 +24,8 @@ from datetime import datetime
 # ── constants ────────────────────────────────────────────────────────────────
 
 SCORE_THRESHOLD  = 20      # only events above this enter correlation
-GROQ_MODEL       = "llama3-8b-8192"
+# GROQ_MODEL       = "llama3-8b-8192"
+GROQ_MODEL = "llama-3.1-8b-instant"
 
 # MITRE ATT&CK mapping per triggered signal
 MITRE_MAP = {
